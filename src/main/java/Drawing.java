@@ -7,7 +7,7 @@ public class Drawing extends Canvas{
     Point p_2= new Point(100, 100);
     int wid = 50;
     int hei = 70;
-    Color c = new Color(0x992266);
+    Color c = new Color(0x99226);
     private shapes.Circle  circle_1 = new shapes.Circle( p ,c,100);
 
     private shapes.Rect rect_1= new shapes.Rect(p_2, c, wid, hei);
