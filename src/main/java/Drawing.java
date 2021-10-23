@@ -10,10 +10,21 @@ public class Drawing extends Canvas{
     Color c = new Color(0x992266);
     private Circle  circle_1 = new Circle( p ,c,100);
 
-    private Rect rect_1= new Rect(p_2,wid, hei);
+    private Rect rect_1= new Rect(p_2, c, wid, hei);
 
     private Frame f;
     public Drawing(){
+        setupFrame();
+        setupCanvas();
+
+    }
+
+    private void setupCanvas() {
+        setBackground(Color.WHITE);
+        setSize(400, 400);
+    }
+
+    private void setupFrame() {
         f= new Frame("My window");
         f.add(this);
         f.setLayout(null);
@@ -24,9 +35,6 @@ public class Drawing extends Canvas{
                 f.dispose();
             }
         });
-        setBackground(Color.WHITE);
-        setSize(400, 400);
-
     }
 
     public void paint(Graphics g){
