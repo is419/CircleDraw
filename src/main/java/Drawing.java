@@ -4,8 +4,13 @@ import java.awt.event.WindowEvent;
 
 public class Drawing extends Canvas{
     Point p = new Point(200, 200);
+    Point p_2= new Point(100, 100);
+    int wid = 50;
+    int hei = 70;
     Color c = new Color(0x992266);
     private Circle  circle_1 = new Circle( p ,c,100);
+
+    private Rect rect_1= new Rect(p_2,wid, hei);
 
     private Frame f;
     public Drawing(){
@@ -25,7 +30,9 @@ public class Drawing extends Canvas{
     }
 
     public void paint(Graphics g){
+
         circle_1.draw(g);
+        rect_1.draw(g);
     }
 }
 
