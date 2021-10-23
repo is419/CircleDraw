@@ -3,7 +3,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 public class Drawing extends Canvas{
-    Point p = new Point(200, 200);
+    Point p = new Point(250, 200);
     Point p_2= new Point(100, 100);
     int wid = 50;
     int hei = 70;
