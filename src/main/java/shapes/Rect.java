@@ -1,6 +1,8 @@
+package shapes;
+
+import shapes.Shape;
+
 import java.awt.*;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
 
 public class Rect extends Shape {
 
